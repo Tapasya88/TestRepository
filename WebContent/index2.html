@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Resource Tracker</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center">
+				Resource Tracker
+			</h3>
+			<form role="form" id="detailsForm" action="/test-app/ClientServlet" method="post" >
+				<div class="form-group">
+					 
+					<label for="positionName">
+						Position
+					</label>
+					<input type="text" class="form-control" name="exampleInputPosition">
+				</div>
+				<div class="form-group">
+					 
+					<label for="canName">
+						Name
+					</label>
+					<input type="text" class="form-control" name="exampleInputName">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Email address
+					</label>
+					<input type="email" class="form-control" name="exampleInputEmail" />
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputPhone">
+						Phone
+					</label>
+					<input type="text" class="form-control" name="exampleInputPhone">
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputLocation">
+						Location
+					</label>
+					<input type="text" class="form-control" name="exampleInputLocation">
+				</div>
+				<div class="form-group">
+					 
+					<label for="exampleInputClient">
+						Client
+					</label>
+					<input type="text" class="form-control" name="exampleInputClient">
+				</div>
+				<button type="submit" class="btn btn-default">
+					Submit
+				</button>
+				
+			</form>
+			<span id="sucessid" style="display:none;">
+					<h3 class="text-center text-success">
+						Submit Sucess !
+				   </h3>
+		       </span>
+			<br></br>
+				<button type="button" class="btn btn-default" onclick="getDetails();">
+					Pull Info
+				</button>
+				
+                <button type="button" class="btn btn-default" onclick="resetForm();">
+					Reset
+				</button>
+				
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
